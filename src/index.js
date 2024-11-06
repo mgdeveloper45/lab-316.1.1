@@ -14,3 +14,20 @@ mainEl[0].classList.add("flex-ctr");
 const topMenuEl = document.getElementById("top-menu");
 topMenuEl.style.height = "100%";
 topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
+topMenuEl.classList.add("flex-around");
+
+// Part 3: Adding Menu Buttons
+
+const menuLinks = [
+    { text: 'about', href: '/about' },
+    { text: 'catalog', href: '/catalog' },
+    { text: 'orders', href: '/orders' },
+    { text: 'account', href: '/account' },
+  ];
+
+menuLinks.forEach(ele => {
+    const navEl = document.createElement("a");
+    navEl.setAttribute("href", ele.href);
+    navEl.textContent = ele.text;
+    topMenuEl.appendChild(navEl);
+})
