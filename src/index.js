@@ -1,3 +1,5 @@
+// ============ DOM Manipulation (Part One) ============
+
 // Part 1: Getting Started
 
 const mainEl = document.getElementsByTagName('main');
@@ -30,4 +32,8 @@ menuLinks.forEach(ele => {
     navEl.setAttribute("href", ele.href);
     navEl.textContent = ele.text;
     topMenuEl.appendChild(navEl);
-})
+});
+
+// ============ DOM Manipulation (Part Two) ============
+
+// Part 4: Adding Interactivity
